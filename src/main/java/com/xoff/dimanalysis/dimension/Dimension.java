@@ -25,4 +25,20 @@ public class Dimension {
         }
         return stringBuilder.toString();
     }
+    public void simplify(){
+          /*
+    # gere les facteurs
+    def simplify(expression):
+            #^-1^1^2
+            #print("expres",expression)
+    l=expression.split("^")
+    res=0
+            #print("l",l)
+    for i in l:
+            if len(i)!=0:
+    res=res+int(i)
+
+    return "^"+str(res)*/
+    }
+
 }
