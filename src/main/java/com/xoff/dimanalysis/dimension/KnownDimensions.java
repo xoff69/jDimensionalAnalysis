@@ -1,5 +1,6 @@
 package com.xoff.dimanalysis.dimension;
 
+import com.xoff.dimanalysis.Constants;
 import lombok.Getter;
 
 import java.util.HashMap;
@@ -21,25 +22,25 @@ public class KnownDimensions {
         StringBuilder stringBuilder=new StringBuilder();
         for (String key:knowDimensions.keySet())
         {
-            stringBuilder.append(key).append(":").append(knowDimensions.get(key));
+            stringBuilder.append(key).append(":").append(knowDimensions.get(key)).append("\n");
         }
         return stringBuilder.toString();
     }
-    private void addH(){
+    private void addDimensionEnergy(){
         Dimension dimension=new Dimension();
         dimension.getSubdimensions().add(new Couple(Unit.M,1));
         dimension.getSubdimensions().add(new Couple(Unit.L,2));
         dimension.getSubdimensions().add(new Couple(Unit.T,-1));
-        knowDimensions.put("h",dimension);
+        knowDimensions.put(Constants.H,dimension);
+        knowDimensions.put(Constants.HBAR,dimension);
+        knowDimensions.put(Constants.E,dimension);
     }
     private KnownDimensions(){
         knowDimensions=new HashMap<>();
-addH();
+        addDimensionEnergy();
 
         /*
 
-    allvar["hbar"]=allvar["h"]
-    allvar["E"]=allvar["h"]
     allvar["k"]="L^-1"
     allvar["c"]="L^1 T^-1"
     allvar["T"]="K^1"

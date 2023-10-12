@@ -10,6 +10,6 @@ class KnownDimensionsTest {
     KnownDimensions knownDimensions=KnownDimensions.getInstance();
     assertNotNull(knownDimensions.toString());
     assert(knownDimensions.getKnowDimensions().keySet().size()>0);
-    System.out.println("dim "+knownDimensions.toString());
+    System.out.println(knownDimensions.toString());
 }
 }
