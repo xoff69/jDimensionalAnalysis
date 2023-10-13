@@ -13,6 +13,8 @@ public class Couple {
 
     @Override
     public String toString(){
-        return  unit.toString() + "^" + size+ " ";
+        String end=size==0? " ":"^" + size+ " ";
+
+        return  unit.toString() +end;
     }
 }

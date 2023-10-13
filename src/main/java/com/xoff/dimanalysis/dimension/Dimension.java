@@ -25,7 +25,8 @@ public class Dimension {
         }
         return stringBuilder.toString();
     }
-    public void simplify(){
+    public Dimension simplify(){
+        return this;
           /*
     # gere les facteurs
     def simplify(expression):
