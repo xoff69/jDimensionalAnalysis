@@ -12,9 +12,9 @@ public class Couple {
     private int size;
 
     @Override
-    public String toString(){
-        String end=size==0? " ":"^" + size+ " ";
+    public String toString() {
+        String end = size == 0 ? " " : "^" + size + " ";
 
-        return  unit.toString() +end;
+        return unit.toString() + end;
     }
 }

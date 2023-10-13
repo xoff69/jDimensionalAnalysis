@@ -1,16 +1,14 @@
 package com.xoff.dimanalysis;
 
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class AnalyseTest {
     @Test
-    public void evalue(){
-        assertEquals ("L ",new Analyse().evalue("k ") .toString());
-        assertEquals ("L^5 ",new Analyse().evalue("k^5 ").toString() );
+    public void evalue() {
+        assertEquals("L ", new Analyse().evalue("k ").toString());
+        assertEquals("L^5 ", new Analyse().evalue("k^5 ").toString());
         /*
 
 dr="/d^2[w]\d[k]^3/"
